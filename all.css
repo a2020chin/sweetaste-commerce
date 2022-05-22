@@ -249,6 +249,7 @@ a{
 .pagination{
     display: flex;
     justify-content: end;
+    margin-top: 10px;
 }
 .paginationBody{
     display: flex;
@@ -263,6 +264,7 @@ a{
     margin-right: -1px;
     width: 60px;
     padding: 16px 0;
+    margin-bottom: 60px; 
 }
 .paginationBody li:nth-child(2) a{
     background: var(--primary);
@@ -276,6 +278,68 @@ a{
 /* sweetie end*/
 
 /* footer start */
-.sub-email{
+.footpadding{
+    padding: 0 80px;
+}
+    /* sub start */
+.sub{
     background: var(--primary);
+}
+.sub-email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-text{
+    display: flex;
+    align-items: center;
+    margin: 38px 0;
+}
+.sub-text img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.sub-text h2{
+    color: var(--secondary);
+    font-size: var(--fs-2);
+}
+.email{
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+.email i{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    font-size: 24px;
+    color: var(--primary);
+}
+.email input{
+    width: 316px;
+    height: 56px;
+    background: var(--secondary);
+    border: 0px;
+    font-size: var(--fs-2);
+    padding-left: 64px;
+}
+.email a{
+    display: block;
+    position: relative;
+    width: 64px;
+    height: 56px;
+    background: #FFE180;
+}
+.email a i{
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    left: 24px;
+}
+    /* sub end */
+
+    /* info start */
+.info{
+    background: var(--secondary);
 }
