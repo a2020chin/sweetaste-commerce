@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    display: block;
+	max-width: 100%;
+	height: auto;
+}
+a{
+    text-decoration: none;
+    transition: .3s;
+}
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+/* css reset  end*/
+
+
+:root{
+    --primary: #3F5D45;
+    --secondary: #EAF0ED;
+    --ff-pf-sb: PingFangTC-Semibold, sans-serif;
+    --ff-pf-l:font-family: PingFangTC-Light, sans-serif;
+
+    --fs-1: 36px;
+    --fs-2: 24px;
+    --fs-3: 20px;
+    --fs-4: 16px;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+}
+.logo{
+	text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.logo a{
+    display: block;
+    width: 220px;
+    height: 40px;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg) no-repeat;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    margin-right: 10px;
+}
+.nav-list li a{
+    display: inline-block;
+    font-family: var(--ff-pf-sb);
+    color: var(--primary);
+    font-size: var(--fs-4);
+    font-weight: bold;
+    padding: 40px 30px;
+}
+.nav-list li a:hover{
+    color: var(--secondary);
+    background: var(--primary);
+}
+.shopping{
+    padding: 39px 0 36px 30px;
+    font-size: 20px;
+    color: #3F5D45;
+}
+
+
+/* header end */
+
+/* banner start */
+.banner{
+    margin-bottom: 60px;
+}
+/* banner end */
+
+
+
+/* sweetie start*/
+.sweetie{
+    display: flex;
+}
+
+
+    /* asside-menu start */
+.aside-menu{
+    width: 300px;
+    text-align: center;
+    font-family: var(--ff-pf-sb);
+    font-weight: bold;
+    font-size: var(--fs-2);
+    white-space: nowrap;
+}
+.aside-menu h2{
+    color: var(--secondary);
+    background: var(--primary);
+    padding: 16px 102px;
+}
+.menu-list li a{
+    display: block;
+    color: var(--primary);
+    padding: 16px 64px;
+    border: 1px solid var(--secondary);
+    margin-top: -1px;
+}
+.menu-list li:nth-child(1) a{
+    background: var(--secondary);
+}
+.menu-list li a:hover{
+    background: var(--secondary);
+}
+
+    /* asside-menu end */
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    /* productList start */
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.productListCard{
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.tag{
+    position: absolute;
+    writing-mode: vertical-lr;
+    font-family: var(--ff-pf-sb);
+    background: var(--primary);
+    color: var(--secondary);
+    font-size: var(--fs-4);
+    letter-spacing: 5px;
+    font-weight: bold;  
+    text-align: center; 
+    padding: 10px;
+    left: 20px;
+}
+.love a{
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    color: var(--primary);
+    font-size: 20px;
+}
+.love a:hover{
+    color: red;
+}
+.productListCardBody{
+    text-align: center;
+}
+.productMoney{
+    display: flex;
+    font-family: var(--ff-pf-sb);
+    color: var(--primary);
+    font-size: var(--fs-3);
+}
+.productMoney h2{
+    font-family: var(--ff-pf-l);
+    border: 1px solid var(--secondary);
+    border-right: -1px solid var(--secondary);
+    padding: 14px 33px;
+}
+.productMoney span{ 
+    font-weight: bold;
+    padding: 14px 20px 14px 27px;
+    border: 1px solid var(--secondary);
+    letter-spacing: 1px;
+}
+.productListCardBody a{
+    display: block;
+    background: var(--secondary);
+    color: var(--primary);
+    font-weight: bold;
+    font-size: var(--fs-2); 
+    padding: 16px 90px;
+}
+.productListCardBody a:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+    /* productList end */
+
+    /* pagination start */
+.pagination{
+    display: flex;
+    justify-content: end;
+}
+.paginationBody{
+    display: flex;
+}
+.paginationBody li a{
+    font-family: var(--ff-pf-sb);
+    font-size: var(--fs-3);
+    display: block;
+    color: var(--primary);
+    text-align: center;
+    border: 1px solid var(--secondary);
+    margin-right: -1px;
+    width: 60px;
+    padding: 16px 0;
+}
+.paginationBody li:nth-child(2) a{
+    background: var(--primary);
+    color: var(--secondary);
+}
+.paginationBody li a:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+    /* pagination end */
+/* sweetie end*/
+
+/* footer start */
+.sub-email{
+    background: var(--primary);
+}
