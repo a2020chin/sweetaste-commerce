@@ -303,6 +303,7 @@ a{
 .sub-text h2{
     color: var(--secondary);
     font-size: var(--fs-2);
+    font-family: Helvetica;
 }
 .email{
     display: flex;
@@ -342,4 +343,66 @@ a{
     /* info start */
 .info{
     background: var(--secondary);
+    padding-bottom: 20px;
+}
+.info-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.info-left>img{
+    width: 171.22px;
+    height: 26.6px;
+    margin-top: 39px;
+    margin-bottom: 115.5px;
+}
+.contact{
+    margin-bottom: 30px;
+}
+.contact li{
+    font-family: Helvetica;
+    color: var(--primary);
+    font-size: var(--fs-4);
+}
+.contact li a{
+    display: block;
+    font-family: Helvetica;
+    color: var(--primary);
+    font-size: var(--fs-4);
+    margin-bottom: 10px;
+}
+.icon{
+    display: flex;
+}
+.icon img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slogan{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.slogan p{
+    writing-mode: vertical-rl;
+    font-size: var(--fs-2);
+    font-weight: bold;
+    color: var(--primary);
+    letter-spacing:5px;
+    margin-top: 30px;
+}
+.slogan p:nth-child(2){
+    text-indent:20px;
+}
+.slogan sub{
+    letter-spacing:0px;
+}
+
+.trademark{
+    color: var(--primary);
 }
