@@ -222,7 +222,7 @@ a{
 .productMoney h2{
     font-family: var(--ff-pf-l);
     border: 1px solid var(--secondary);
-    border-right: -1px solid var(--secondary);
+    margin-right: -1px;
     padding: 14px 33px;
 }
 .productMoney span{ 
