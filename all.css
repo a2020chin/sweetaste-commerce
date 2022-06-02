@@ -184,6 +184,7 @@ a{
 }
 .productListCard{
     position: relative;
+    width: 300px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
@@ -223,13 +224,15 @@ a{
     font-family: var(--ff-pf-l);
     border: 1px solid var(--secondary);
     margin-right: -1px;
-    padding: 14px 33px;
+    width: 173px;
+    padding: 14px 0;
 }
-.productMoney span{ 
+.productMoney p{ 
     font-weight: bold;
-    padding: 14px 20px 14px 27px;
+    width: 127px;
     border: 1px solid var(--secondary);
     letter-spacing: 1px;
+    padding: 17px 0;
 }
 .productListCardBody a{
     display: block;
@@ -398,6 +401,7 @@ a{
 }
 .slogan p:nth-child(2){
     text-indent:20px;
+    margin-right: 16px;
 }
 .slogan sub{
     letter-spacing:0px;
